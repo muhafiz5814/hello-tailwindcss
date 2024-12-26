@@ -600,6 +600,10 @@ video {
   max-width: fit-content;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -740,6 +744,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
