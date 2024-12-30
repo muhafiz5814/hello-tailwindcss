@@ -10,7 +10,7 @@
 <body class="min-h-screen bg-slate-900">
 
     <!-- Navbar starts here -->
-    <nav class="bg-slate-400 flex justify-between items-center p-3">
+    <nav class="bg-slate-400 flex justify-between items-center p-3 sticky top-0">
         <div class="flex gap-x-4 items-center">
             <div class="font-bold text-2xl min-w-fit"><a href="">Haji Flour Mill</a></div>
             <ul class="hidden md:flex md:gap-x-2 font-medium">
@@ -33,15 +33,46 @@
     <!-- Navbar ends here -->
 
     <!-- Hero starts from here -->
-
     <div class="bg-[#1b2847] md:flex md:justify-around md:flex-nowrap md:px-6">
-        <div class="h-full text-center my-auto pt-4 lg:pl-6">
+        <div class="h-full text-center my-auto pt-4 px-4 sm:px-0 lg:pl-6">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-white">Haji Flour Mill</h1>
             <p class="md:text-lg lg:text-2xl mt-4 md:mt-8 text-gray-400">Freshly Ground, Perfectly Milled - Superiour Flour for Your Kitchen.</p>
         </div>
-        <img class="max-w-md mx-auto md:max-w-[50%] lg:max-w-[45%]" src="./images/Hero image.png" alt="Flour Image">
+        <img class="mx-auto w-full max-w-sm sm:max-w-md md:max-w-[50%] lg:max-w-[45%]" src="./images/Hero image.png" alt="Flour Image">
     </div>
-
     <!-- Hero ends here -->
+
+    <!-- Achievements section starts here -->
+     <div class=" text-center flex flex-col items-center">
+        <div class="mt-6">
+            <h2 class="text-xl font-bold text-blue-800">"Freshly Ground, Perfectly Milled"</h2>
+            <div class="w-48 mx-auto border-2 border-orange-400 mt-2"></div>
+        </div>
+        <div class="mt-16">
+            <div class="flex flex-col items-center mb-10">
+                <div class="bg-white rounded-full p-4 overflow-hidden">
+                    <img class="size-14" src="./images/iteration.png" alt="Service iteration icon image">
+                </div>
+                <p class="text-white text-xl font-bold">10+</p>
+                <p class="text-gray-400 text-lg">Services provided</p>
+            </div>
+            <div class="flex flex-col items-center mb-10">
+                <div class="bg-white rounded-full p-4 overflow-hidden">
+                    <img class="size-14" src="./images/costumer.png" alt="Service iteration icon image">
+                </div>
+                <p class="text-white text-xl font-bold">100+</p>
+                <p class="text-gray-400 text-lg">Customers registered</p>
+            </div>
+            <div class="flex flex-col items-center mb-10">
+                <div class="bg-white rounded-full p-4 overflow-hidden">
+                    <img class="size-14" src="./images/visitor.png" alt="Service iteration icon image">
+                </div>
+                <p class="text-white text-xl font-bold">5400+</p>
+                <p class="text-gray-400 text-lg">Yearly customer visits</p>
+            </div>
+        </div>
+     </div>
+    <!-- Achievements section ends here -->
+
 </body>
 </html>
