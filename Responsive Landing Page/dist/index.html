@@ -7,111 +7,157 @@
 
     <link rel="stylesheet" href="./style.css">
 </head>
-<body class="min-h-screen bg-slate-900">
+<body class="min-h-screen bg-slate-900 relative">
 
-    <!-- Navbar starts here -->
-    <nav class="bg-slate-400 flex justify-between items-center p-3 sticky top-0">
-        <div class="flex gap-x-4 items-center">
-            <div class="font-bold text-2xl min-w-fit"><a href="">Haji Flour Mill</a></div>
-            <ul class="hidden md:flex md:gap-x-2 font-medium">
-                <li><a href="">Home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </div>
+    <!-- Header starts here -->
+    <header class="sticky top-0">
+        <!-- Navbar starts here -->
+        <nav class="bg-slate-400 flex justify-between items-center p-3">
+            <div class="flex gap-x-4 items-center">
+                <div class="font-bold text-2xl min-w-fit"><a href="">Haji Flour Mill</a></div>
+                <ul class="hidden md:flex md:gap-x-2 font-medium">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="hidden md:flex md:gap-x-2">
+                <div class="bg-slate-600 text-white py-1 px-2 rounded-sm hover:cursor-pointer">Login User</div>
+                <div class="bg-slate-600 text-white py-1 px-2 rounded-sm hover:cursor-pointer">Login Admin</div>
+            </div>
+    
+            <div class="md:hidden text-2xl cursor-pointer">
+                <p>&#9776</p>
+            </div>
+        </nav>
+        <!-- Navbar ends here -->
+    </header>
+    <!-- Header ends here -->
 
-        <div class="hidden md:flex md:gap-x-2">
-            <div class="bg-slate-600 text-white py-1 px-2 rounded-sm hover:cursor-pointer">Login User</div>
-            <div class="bg-slate-600 text-white py-1 px-2 rounded-sm hover:cursor-pointer">Login Admin</div>
+    <!-- Main content starts here -->
+    <main>
+        <!-- Hero starts from here -->
+        <div class="bg-[#1b2847] md:flex md:justify-around md:flex-nowrap md:px-6">
+            <div class="h-full text-center my-auto pt-4 px-4 sm:px-0 lg:pl-6">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-white">Haji Flour Mill</h1>
+                <p class="md:text-lg lg:text-2xl mt-4 md:mt-8 text-gray-400">Freshly Ground, Perfectly Milled - Superiour Flour for Your Kitchen.</p>
+            </div>
+            <img class="mx-auto w-full max-w-sm sm:max-w-md md:max-w-[50%] lg:max-w-[45%]" src="./images/Hero image.png" alt="Flour Image">
         </div>
+        <!-- Hero ends here -->
 
-        <div class="md:hidden text-2xl cursor-pointer">
-            <p>&#9776</p>
-        </div>
-    </nav>
-    <!-- Navbar ends here -->
+        <!-- Achievements section starts here -->
+         <div class=" text-center flex flex-col items-center">
+            <div class="mt-6">
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-bold lg:font-semibold text-blue-800">"Freshly Ground, Perfectly Milled"</h2>
+                <div class="w-1/2 mx-auto border-2 border-orange-400 mt-3"></div>
+            </div>
+            <div class="mt-12 sm:w-full sm:flex sm:justify-evenly">
+                <div class="sm:flex-1 flex flex-col items-center mb-10">
+                    <div class="bg-white rounded-full p-4 overflow-hidden">
+                        <img class="size-14" src="./images/iteration.png" alt="Service iteration icon image">
+                    </div>
+                    <p class="text-white text-xl font-bold">10+</p>
+                    <p class="text-gray-400 text-lg">Services provided</p>
+                </div>
+                <div class="sm:flex-1 flex flex-col items-center mb-10">
+                    <div class="bg-white rounded-full p-4 overflow-hidden">
+                        <img class="size-14" src="./images/costumer.png" alt="Service iteration icon image">
+                    </div>
+                    <p class="text-white text-xl font-bold">100+</p>
+                    <p class="text-gray-400 text-lg">Customers registered</p>
+                </div>
+                <div class="sm:flex-1 flex flex-col items-center mb-10">
+                    <div class="bg-white rounded-full p-4 overflow-hidden">
+                        <img class="size-14" src="./images/visitor.png" alt="Service iteration icon image">
+                    </div>
+                    <p class="text-white text-xl font-bold">5400+</p>
+                    <p class="text-gray-400 text-lg">Yearly customer visits</p>
+                </div>
+            </div>
+         </div>
+        <!-- Achievements section ends here -->
+    
+        <!-- Services section starts here -->
+        <div class=" text-center flex flex-col items-center">
+            <div class="mt-6">
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-bold lg:font-semibold text-blue-800">"Our Services"</h2>
+                <div class="w-1/2 mx-auto border-2 border-orange-400 mt-3"></div>
+            </div>
+            <div class="mt-12 sm:w-[90%] lg:w-full sm:flex sm:justify-evenly sm:gap-10 lg:gap-0 flex-wrap">
+                <div class="w-3/5 mx-auto min-w-44 sm:w-44 flex flex-col items-center mb-10 border-2 border-gray-400 hover:border-white transition duration-300 rounded-md p-2 box-border">
+                    <div class="bg-violet-400 rounded-full p-4 overflow-hidden">
+                        <img class="size-11" src="./images/flour.png" alt="Service iteration icon image">
+                    </div>
+                    <p class="text-white text-xl font-bold">Flour Grinding</p>
+                    <p class="text-gray-400 text-base">Bring your Wheat, Corn or any grain and get nicely grinded Flour.</p>
+                </div>
+                <div class="w-3/5 mx-auto min-w-44 sm:w-44 flex flex-col items-center mb-10 border-2 border-gray-400 hover:border-white transition duration-300 rounded-md p-2 box-border">
+                    <div class="bg-violet-400 rounded-full p-4 overflow-hidden">
+                        <img class="size-11" src="./images/bulgur.png" alt="Service iteration icon image">
+                    </div>
+                    <p class="text-white text-xl font-bold">Bulgur Grinding</p>
+                    <p class="text-gray-400 text-base">Bring your Wheat, Corn or any grain and get nicely grinded Bulgur.</p>
+                </div>
+                <div class="w-3/5 mx-auto min-w-44 sm:w-44 flex flex-col items-center mb-10 border-2 border-gray-400 hover:border-white transition duration-300 rounded-md p-2 box-border">
+                    <div class="bg-violet-400 rounded-full p-4 overflow-hidden">
+                        <img class="size-11" src="./images/rice.png" alt="Service iteration icon image">
+                    </div>
+                    <p class="text-white text-xl font-bold">Rice milling</p>
+                    <p class="text-gray-400 text-base">Bring your paddy and get nicely grinded and polished Rice.</p>
+                </div>
+                <div class="w-3/5 mx-auto min-w-44 sm:w-44 flex flex-col items-center mb-10 border-2 border-gray-400 hover:border-white transition duration-300 rounded-md p-2 box-border">
+                    <div class="bg-violet-400 rounded-full p-4 overflow-hidden">
+                        <img class="size-11" src="./images/job-portal.png" alt="Service iteration icon image">
+                    </div>
+                    <p class="text-white text-xl font-bold">Job portal</p>
+                    <p class="text-gray-400 text-base">Intrested in our business? Check our Job portal to find your best fit for you.</p>
+                </div>
+            </div>
+            </div>
+        <!-- Services section ends here -->
+    </main>
+    <!-- Main content ends here -->
 
-    <!-- Hero starts from here -->
-    <div class="bg-[#1b2847] md:flex md:justify-around md:flex-nowrap md:px-6">
-        <div class="h-full text-center my-auto pt-4 px-4 sm:px-0 lg:pl-6">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-white">Haji Flour Mill</h1>
-            <p class="md:text-lg lg:text-2xl mt-4 md:mt-8 text-gray-400">Freshly Ground, Perfectly Milled - Superiour Flour for Your Kitchen.</p>
-        </div>
-        <img class="mx-auto w-full max-w-sm sm:max-w-md md:max-w-[50%] lg:max-w-[45%]" src="./images/Hero image.png" alt="Flour Image">
-    </div>
-    <!-- Hero ends here -->
-
-    <!-- Achievements section starts here -->
-     <div class=" text-center flex flex-col items-center">
-        <div class="mt-6">
-            <h2 class="text-xl md:text-2xl lg:text-3xl font-bold lg:font-semibold text-blue-800">"Freshly Ground, Perfectly Milled"</h2>
-            <div class="w-1/2 mx-auto border-2 border-orange-400 mt-3"></div>
-        </div>
-        <div class="mt-12 sm:w-full sm:flex sm:justify-evenly">
-            <div class="sm:flex-1 flex flex-col items-center mb-10">
-                <div class="bg-white rounded-full p-4 overflow-hidden">
-                    <img class="size-14" src="./images/iteration.png" alt="Service iteration icon image">
-                </div>
-                <p class="text-white text-xl font-bold">10+</p>
-                <p class="text-gray-400 text-lg">Services provided</p>
+    <!-- Footer starts here -->
+    <footer>
+        <div class="flex flex-col items-center gap-8 md:flex-row md:justify-between md:items-start flex-wrap bg-slate-800 text-white p-4">
+            <div>
+                <img class="inline size-8 ms-2" src="./images/grinding.png" alt="Grinding mill image">
+                <p class="inline ps-3 font-bold text-xl">Haji Flour Mill</p>
+                <p class="mt-1 text-sm">Email us: hajiflourmill@mail.com</p>
             </div>
-            <div class="sm:flex-1 flex flex-col items-center mb-10">
-                <div class="bg-white rounded-full p-4 overflow-hidden">
-                    <img class="size-14" src="./images/costumer.png" alt="Service iteration icon image">
-                </div>
-                <p class="text-white text-xl font-bold">100+</p>
-                <p class="text-gray-400 text-lg">Customers registered</p>
+            <div class="text-center md:text-start">
+                <p class="font-semibold">HF Mill</p>
+                <div class="border border-yellow-300 mb-1"></div>
+                <ul class="text-sm">
+                    <li>About US</li>
+                    <li>FAQs</li>
+                    <li>Privacy policy</li>
+                </ul>
             </div>
-            <div class="sm:flex-1 flex flex-col items-center mb-10">
-                <div class="bg-white rounded-full p-4 overflow-hidden">
-                    <img class="size-14" src="./images/visitor.png" alt="Service iteration icon image">
-                </div>
-                <p class="text-white text-xl font-bold">5400+</p>
-                <p class="text-gray-400 text-lg">Yearly customer visits</p>
+            <div class="text-center md:text-start">
+                <p class="font-semibold">Services</p>
+                <div class="border border-yellow-300 mb-1"></div>
+                <ul class="text-sm">
+                    <li>Flour grinding</li>
+                    <li>Bulgur grinding</li>
+                    <li>Rice milling</li>
+                </ul>
+            </div>
+            <div class="text-center md:text-start">
+                <p class="font-semibold">Links</p>
+                <div class="border border-yellow-300 mb-1"></div>
+                <ul class="text-sm">
+                    <li>Careers</li>
+                    <li>Resources credits</li>
+                </ul>
             </div>
         </div>
-     </div>
-    <!-- Achievements section ends here -->
-
-    <!-- Services section starts here -->
-    <div class=" text-center flex flex-col items-center">
-        <div class="mt-6">
-            <h2 class="text-xl md:text-2xl lg:text-3xl font-bold lg:font-semibold text-blue-800">"Our Services"</h2>
-            <div class="w-1/2 mx-auto border-2 border-orange-400 mt-3"></div>
-        </div>
-        <div class="mt-12 sm:w-[90%] lg:w-full sm:flex sm:justify-evenly sm:gap-10 lg:gap-0 flex-wrap">
-            <div class="w-3/5 mx-auto min-w-44 sm:w-44 flex flex-col items-center mb-10 border-2 border-gray-400 hover:border-white transition duration-300 rounded-md p-2 box-border">
-                <div class="bg-violet-400 rounded-full p-4 overflow-hidden">
-                    <img class="size-11" src="./images/flour.png" alt="Service iteration icon image">
-                </div>
-                <p class="text-white text-xl font-bold">Flour Grinding</p>
-                <p class="text-gray-400 text-base">Bring your Wheat, Corn or any grain and get nicely grinded Flour.</p>
-            </div>
-            <div class="w-3/5 mx-auto min-w-44 sm:w-44 flex flex-col items-center mb-10 border-2 border-gray-400 hover:border-white transition duration-300 rounded-md p-2 box-border">
-                <div class="bg-violet-400 rounded-full p-4 overflow-hidden">
-                    <img class="size-11" src="./images/bulgur.png" alt="Service iteration icon image">
-                </div>
-                <p class="text-white text-xl font-bold">Bulgur Grinding</p>
-                <p class="text-gray-400 text-base">Bring your Wheat, Corn or any grain and get nicely grinded Bulgur.</p>
-            </div>
-            <div class="w-3/5 mx-auto min-w-44 sm:w-44 flex flex-col items-center mb-10 border-2 border-gray-400 hover:border-white transition duration-300 rounded-md p-2 box-border">
-                <div class="bg-violet-400 rounded-full p-4 overflow-hidden">
-                    <img class="size-11" src="./images/rice.png" alt="Service iteration icon image">
-                </div>
-                <p class="text-white text-xl font-bold">Rice milling</p>
-                <p class="text-gray-400 text-base">Bring your paddy and get nicely grinded and polished Rice.</p>
-            </div>
-            <div class="w-3/5 mx-auto min-w-44 sm:w-44 flex flex-col items-center mb-10 border-2 border-gray-400 hover:border-white transition duration-300 rounded-md p-2 box-border">
-                <div class="bg-violet-400 rounded-full p-4 overflow-hidden">
-                    <img class="size-11" src="./images/job-portal.png" alt="Service iteration icon image">
-                </div>
-                <p class="text-white text-xl font-bold">Job portal</p>
-                <p class="text-gray-400 text-base">Intrested in our business? Check our Job portal to find your best fit for you.</p>
-            </div>
-        </div>
-        </div>
-    <!-- Services section ends here -->
+    </footer>
+    <!-- Footer ends here -->
 
 </body>
 </html>
